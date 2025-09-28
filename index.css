@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.list-to-do{
+    height: 40px;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-el{
+    display: flex;
+    justify-content:space-between;
+    row-gap: 3px;
+}
+.button-el button{
+    margin:0px 3px
+
+}
+.input-container{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    margin: 10px 0px;
+    border: none
+}
+.input-container input, 
+.input-container button{
+    height: 20px;
+    width: auto;
+    margin: 0px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-container button{
+    height: 20px;
+    width: auto;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    padding:  5px;
+    background-color: rgb(75, 75, 111);
+    color: white;
+    cursor: pointer;
+    transition: ease opacity 0.34s;
+    
+}
+.input-container button:hover{
+    opacity: 0.8;
+}
+.input-container input{
+    border: 1px solid rgb(75, 75, 111);
+    border-radius: 3px; 
+    padding-left: 3px;
+}
+/* list */
+.button-el button{
+    height: 20px;
+    width: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(47, 47, 112);
+    outline: none;
+    border-radius: 2px;
+    color: white;
+
+}
+.button-del,
+.button-like,
+.button-dislike{
+    color: white;
+    transition: ease opacity 0.35s ;
+}
+.button-del:hover,
+.button-like:hover,
+.button-dislike:hover{
+    opacity: 0.5
+}
+.button-del{
+    background-color: rgb(166, 36, 36);
+}
+.button-like,
+.button-dislike{
+    background-color: rgb(117, 237, 237);
+}
